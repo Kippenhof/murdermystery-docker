@@ -1,6 +1,5 @@
 FROM alpine:latest
 
-RUN wget -O murdermystery https://github.com/Scoder12/murdermystery/releases/latest/download/server_linux_x64
-RUN chmod +x murdermystery
-RUN ["./murdermystery" -addr 0.0.0.0:8080]
+RUN chmod +x /murdermystery-v0.3.0
+RUN ["/murdermystery-v0.3.0" -addr 0.0.0.0:8080]
 EXPOSE 8080
