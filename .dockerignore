@@ -1,5 +1,4 @@
 *.md
 .dockerignore
 .git
-Dockerfile*
 LICENSE
